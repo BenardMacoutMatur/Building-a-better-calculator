@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*Build a better calculator*/
+
+    int num1,num2,sum,div,mult,sub;
+    char sign;
+
+    printf("Enter the first number\n:  ");
+    scanf(" %d",&num1);
+
+    printf("Enter the operator sign\n:  ");
+    scanf(" %c",&sign);
+
+    printf("Enter the second number\n:  ");
+    scanf(" %d",&num2);
+
+    if(sign == '+')
+    {
+        sum=num1+num2;
+        printf("The toatl of the %d and %d is %d\n",num1,num2,sum);
+        printf("I am proud of you!!");
+    }
+    else if(sign == '-')
+    {
+        sub=num1-num2;
+        printf("The difference between %d and %d is %d\n",num1,num2,sub);
+        printf("I am proud of you!!");
+    }
+     else if(sign == '/')
+    {
+        div=num1/num2;
+        printf("The quotient between %d and %d is %d\n",num1,num2,div);
+        printf("I am proud of you!!");
+    }
+     else if(sign == '*')
+    {
+        mult=num1*num2;
+        printf("The product between %d and %d is %d\n",num1,num2,mult);
+        printf("I am proud of you!!");
+    }
+    else
+    {
+        printf("Inconclusive!!");
+    }
+
+    return 0;
+}
